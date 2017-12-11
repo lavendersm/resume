@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>csm的简历</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="前端,工作,简历">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/fontello.min.css">
+    <link rel="stylesheet" href="lib/zoom.css">
+</head>
+<body>
+    <div class="container">
+        <!--left-->
+        <div class="info-left">
+            <div class="title">
+                <img src="img/csm.jpg" alt="idol">
+                <h1>Csm的简历</h1>
+                <h2>生活就像海洋，只有...(゜-゜)</h2>
+            </div>
+            <ul class="slide-info">
+                <li>
+                    <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
+                    <dd><i class="icon-phone-1"></i>电话: 15521168782</dd>
+                    <dd><i class="icon-mail-alt"></i>邮箱:953789630@qq.com</dd>
+                </li>
+                <li>
+                    <dt><i class="icon-bookmark">Application.应聘岗位</i></dt>
+                    <dd>前端工程师</dd>
+                </li>
+
+            </ul>
+            <ul class="skill">
+                <li id="skill">
+                    <dt><i class="icon-bookmark"></i></i>Skill.技能</dt>
+                    <dd><p class="txt">html/html5:</p><span class="bar" ></span></dd>
+                    <dd><p class="txt">css/css3:</p><span  class="bar"></span></dd>
+                    <dd><p class="txt">js:</p><span class="bar"></span></dd>
+                    <dd><p class="txt">node:</p><span class="bar"></span></dd>
+
+                </li>
+            </ul>
+
+        </div>
+
+        <!--right-->
+        <div class="info-right">
+            <ul class="main-info">
+                <!--个人资料-->
+                <li><dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
+                    <dd><strong>个人信息:</strong> <span>陈思敏 / 女</span></dd>
+                    <dd><strong>年龄：</strong> <span>21</span></dd>
+                    <dd><strong>毕业院校:</strong> <span>广东工业大学/信息工程学院</span></dd>
+                    <dd><strong>博客:</strong> <a href="" target="_blank">www.xxx.net</a></dd>
+                    <dd><strong>GitHub:</strong><a href="https://github.com/lavendersm">lavendersm.github.com</a> </dd>
+                </li>
+                <!--项目-->
+                <li>
+                    <dt><i class="icon-bookmark"></i>experience:项目与经验</dt>
+                    <ul class="exp">
+                        <li>
+                            <div class="circle"></div>
+                            <h4>Blog学习笔记项目</h4>
+                            <p>用php+sql+html开发，用于记录日常生活和学习的专属网站</p>
+                            <p>IP地址：120.79.48.120/blog</p>
+                            <img src="img/blog.PNG" alt=""  >
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>班级说说发表</h4>
+                            <p>用node+mongodb分模块开发，用于发表说说的专属平台</p>
+                            <p>IP地址：120.79.48.120:3007</p>
+                            <img src="img/saysay.PNG" alt=""  >
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>Blog学习笔记项目</h4>
+                            <p>用php+sql+html开发，用于记录日常生活和学习的专属网站</p>
+                            <p>IP地址：120.79.48.120/blog</p>
+                            <img src="img/blog.PNG" alt=""  >
+                        </li>
+                    </ul>
+
+                </li>
+                <!--技能-->
+                <li>
+                    <dt><i class="icon-bookmark"></i>Skill. 技能清单</dt>
+                    <h3>前端</h3>
+                    <ul class="exp">
+                        <li>
+                            <div class="circle"></div>
+                            <h4>HTML / CSS</h4>
+                            <p>能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局</p>
+                            <p>熟悉 Less Sass  等CSS预处理和模块化工具</p>
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>JavaScript</h4>
+                            <p>熟悉原生 Javascript，能脱离 jQuery 等类库编码</p>
+                            <p>能运用模块化、面向对象的方式编程</p>
+                            <p>了解 React AngularJS jQuery Vue的使用</p>
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>其他</h4>
+                            <p>熟悉 Webpack Gulp 等前端自动化工具</p>
+                            <p>了解前端安全、性能优化方面的一些知识</p>
+                        </li>
+                    </ul>
+                    <h3>后台</h3>
+                    <ul class="exp">
+                        <li>
+                            <div class="circle"></div>
+                            <h4>node/php</h4>
+                            <p>了解node的基本核心操作/用php开发过项目</p>
+                            <p>运用模块化编程</p>
+                            <p>用node写过几个小项目，剪裁图片上传文件，地址：</p>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <footer>
+        <p> <a href="#" target="blank">Csm.Made with</a></p>
+    </footer>
+
+</body>
+</html>
+<script>
+    var spans = document.getElementById("skill").getElementsByTagName('span');
+    function getBar(ob,num){
+        var txt = document.createElement("i");
+        txt = parseInt(num)+"%";
+        ob.style.width = parseInt(num/100*150)+"px";
+        ob.append(txt);
+    }
+    getBar(spans[0],80);
+    getBar(spans[1],70);
+    getBar(spans[2],60);
+    getBar(spans[3],70);
+</script>
